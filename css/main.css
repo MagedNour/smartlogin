@@ -1,0 +1,80 @@
+:root{
+    --bg-main: #25353F;
+    --bs-body-color: #B6B6B6;
+}
+
+.color-main{
+    color: #B6B6B6;
+}
+
+.bg-main{
+    background-color: var(--bg-main);
+}
+
+.login-box, nav, .box{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.login-box h1{
+    color: #17a2b8;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.login-box input{
+    background-color: transparent !important;
+    color: white !important;
+    padding: 5px;
+    border-color: #B6B6B6;
+    outline: none;
+    font-size: 1rem;
+}
+
+ .login-box input::placeholder{
+    color: #B6B6B6;
+    font: 0.5rem;
+} 
+
+.login-box p{
+    color: white;
+    font-size: 16px;
+}
+
+.login-box p a{
+    color: white;
+    text-decoration: none;
+}
+
+.login-box p a:hover{
+    text-decoration: underline;
+    
+
+}
+
+nav .logo{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card{
+    min-height: 100%;
+}
+
+.card-img img{
+    transition: 0.5s;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+.card .card-body a{
+    transition: 0.5s;
+}
+
+.card .card-body a:hover{
+    color: teal !important;
+}
