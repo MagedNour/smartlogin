@@ -132,7 +132,7 @@ function getData() {
     var data = []
     var httpsReq = new XMLHttpRequest();
 
-    httpsReq.open("get", "https://forkify-api.herokuapp.com/api/search?q=beetroot")
+    httpsReq.open("get", "https://forkify-api.herokuapp.com/api/search?q=pizza")
     httpsReq.send();
 
     httpsReq.addEventListener("readystatechange", function () {
