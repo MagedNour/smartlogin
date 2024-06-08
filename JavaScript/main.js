@@ -133,13 +133,13 @@ function getData() {
     var data = []
     var httpsReq = new XMLHttpRequest();
 
-    httpsReq.open("get", "http://forkify-api.herokuapp.com/api/search?q=pizza")
+    httpsReq.open("GET", "http://forkify-api.herokuapp.com/api/search?q=pizza")
     httpsReq.send();
 
     httpsReq.addEventListener("readystatechange", function () {
         console.log(httpsReq.readyState);
         if (httpsReq.readyState == 4) {
-            data = JSON.parse(httpsReq.response).recipes
+            data = JSON.parse(httpsReq.responseText).recipes
             displayData(data)
         }
     })
