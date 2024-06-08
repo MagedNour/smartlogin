@@ -123,6 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (path === '/home.html') {
         displayWelcomeMessage();
         getData()
+        console.log("success");
     }
 });
 
