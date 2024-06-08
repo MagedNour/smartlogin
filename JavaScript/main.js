@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (path === '/home.html') {
         displayWelcomeMessage();
         getData()
-        console.log("success");
+        
     }
 });
 
@@ -150,6 +150,8 @@ function getData() {
 }
 
 function displayData(dataArray) {
+
+    console.log(dataArray);
     var allCards = ""
     for (let i = 0; i < dataArray.length; i++) {
         allCards += ` 
