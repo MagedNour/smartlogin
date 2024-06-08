@@ -120,7 +120,7 @@ function displayWelcomeMessage() {
 document.addEventListener("DOMContentLoaded", function () {
     var path = window.location.pathname;
 
-    if (path === '/home.html') {
+    if (path.includes('/home.html')) {
         displayWelcomeMessage();
         getData()
         
